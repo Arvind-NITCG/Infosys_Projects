@@ -120,7 +120,7 @@ def predict_assists():
             X = assists_scaler.transform(X)
 
         # --- 5. Predict ---
-        pred = float(assists_model.predict(X)[0])
+        pred = round(assists_model.predict(X)[0])
 
         # --- 6. Compute per90 ---
         minutes = float(data.get('Minutes_Played', 0))
@@ -136,3 +136,4 @@ def predict_assists():
 if __name__ == '__main__':
     print("Starting Flask app; templates from:", FRONTEND_DIR)
     app.run(host='127.0.0.1', port=5000, debug=True)
+
