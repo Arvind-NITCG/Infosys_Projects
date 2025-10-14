@@ -121,7 +121,7 @@ def get_and_predict(df, catboost_assets, home_team, away_team, strength_map, hom
     away_strength = strength_map.get(away_team, 1500)
     
     # --- MODIFIED: Simplified the rank logic to use user input directly ---
-    st.success(f"Using Ranks: {home_team} (Rank {home_rank} - Live), {away_team} (Rank {away_rank} - Live)")
+    st.success(f"Using Ranks: {home_team} (Rank {home_rank}), {away_team} (Rank {away_rank})")
 
     features_dict = {
         'HomeTeam': home_team, 'AwayTeam': away_team, 'Season': '2023-2024',
