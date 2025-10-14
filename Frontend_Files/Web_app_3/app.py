@@ -172,9 +172,9 @@ def show_football_transition():
     placeholder.empty()
 
 def inputs_block_match_winner():
-    st.markdown('<div class="info-box">Select the home team, away team, and their current league ranks to predict the match outcome.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="info-box">Select the home team, away team, and their previous league ranks to predict the match outcome.</div>', unsafe_allow_html=True)
     st.markdown(
-    '<div class="info-box">To get the live league rank, click the following link: <a href="https://www.premierleague.com/en/tables/" target="_blank">EPL Live Table</a></div>',unsafe_allow_html=True)
+    '<div class="info-box">To get the previous league rank, click the following link: <a href="https://www.premierleague.com/en/tables/" target="_blank">EPL Live Table</a></div>',unsafe_allow_html=True)
     with st.container():
         c1, c2 = st.columns(2)
         home_team = c1.selectbox('Home Team', options=ALLOWED_TEAMS, index=13) 
