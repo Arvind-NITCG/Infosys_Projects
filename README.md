@@ -1,8 +1,8 @@
-=================================== AI FOOTBALL ANALYTICS SUITE
+# AI FOOTBALL ANALYTICS SUITE
 Author: Arvind K N
 Project: Infosys Springboard AI Internship
 
-1. PROJECT OVERVIEW
+# PROJECT OVERVIEW
 This repository contains the AI Football Analytics Suite, a comprehensive, dual-mode web application built with Streamlit. It is the culmination of a deep-dive engineering project that involved rigorous data preprocessing, advanced feature engineering, multi-model evaluation, and deployment.
 
 The suite provides two distinct AI-powered tools for football analysis:
@@ -13,7 +13,7 @@ Top Goal Scorer Estimator: A live, in-season estimator that projects a player's 
 
 The final application is live and accessible, demonstrating an end-to-end MLOps pipeline from data to production.
 
-2. THE ENGINEERING JOURNEY & KEY DECISIONS
+# THE ENGINEERING JOURNEY & KEY DECISIONS
 This project was not a linear path but a journey of experimentation, analysis, and data-driven decision-making.
 
 MATCH WINNER PREDICTOR: A "HARD PROBLEM"
@@ -26,7 +26,7 @@ Temporal Team Strength (Elo): An Elo-style rating system was implemented to trac
 
 Multiple architectures were tested, including a complex XGBoost "divide and conquer" system. However, rigorous evaluation proved that a single, powerful CatBoost Classifier provided the best balance of accuracy and reliability on the held-out test set, making it the champion model.
 
-TOP GOAL SCORER ESTIMATOR: A TALE OF TWO PROBLEMS
+#TOP GOAL SCORER ESTIMATOR: A TALE OF TWO PROBLEMS
 
 The initial goal was a pre-season prediction, but this was proven to be statistically unreliable with the available data. Following the project requirements for a "live" model, the objective was pivoted to a more robust in-season estimation.
 
@@ -34,7 +34,7 @@ Feature Importance: Analysis revealed that in-season stats, particularly Goals_p
 
 Model Selection: While a simple Linear Regression failed to capture the complexity, a powerful, non-linear XGBoost Regressor proved highly effective, achieving an R² score of 0.92.
 
-3. FINAL ARCHITECTURE & TECH STACK
+# FINAL ARCHITECTURE & TECH STACK
 The final application is a multi-page Streamlit app that loads two distinct, trained models.
 
 TECH STACK
